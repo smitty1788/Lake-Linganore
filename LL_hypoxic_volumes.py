@@ -21,11 +21,8 @@ dates = [f.name for f in arcpy.ListFields(Station_Data_Project, 'hyp*', 'All')]
 def hypoxic_volume(date):
 	
 	output_krig = 'G:\Lake Linganore\Data\Spatial Data\Depth\Scratch.gdb\krig' + str(int(filter(str.isdigit, str(date))))
-	
 	output_tin = output_krig + '_tin'
-	
 	output_dif = output_krig + '_diff'
-	
 	Output_variance_of_prediction_raster = ""
 	Output_Raster = ""
 	
