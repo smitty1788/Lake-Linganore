@@ -21,32 +21,3 @@ while int(calc) <= 38:
 for i in depths:
 	
 	arcpy.SurfaceVolume_3d(LL_bathymetry, volume, "ABOVE", str(i), "1", "0")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
